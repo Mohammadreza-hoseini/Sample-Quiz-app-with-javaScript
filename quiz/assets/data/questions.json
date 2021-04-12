@@ -1,0 +1,98 @@
+[{
+        "id": 1,
+        "englishTitle": "Which attribute is used to open the link in a new page or tab?",
+        "persianTitle": "برای اینکه لینک در صفحه یا تب جدید باز شود، از کدام صفت استفاده میشود؟",
+        "options": [{
+                "key": 1,
+                "title": "_blank"
+            },
+            {
+                "key": 2,
+                "title": "_self"
+            },
+            {
+                "key": 3,
+                "title": "_new"
+            },
+            {
+                "key": 4,
+                "title": "_parent"
+            }
+        ],
+        "answerKey": 1
+
+    },
+    {
+        "id": 2,
+        "englishTitle": "Which operator returns true if the two values being compared are not equal?",
+        "persianTitle": "کدام عملگر true برمیگرداند اگر دو مقداری که با هم مقایسه میشوند، برابر نباشند؟",
+        "options": [{
+                "key": 1,
+                "title": "< >"
+            },
+            {
+                "key": 2,
+                "title": "~"
+            },
+            {
+                "key": 3,
+                "title": "==!"
+            },
+            {
+                "key": 4,
+                "title": "!=="
+            }
+        ],
+        "answerKey": 4
+
+    },
+    {
+        "id": 3,
+        "englishTitle": "Which is not a keyword in JavaScript?",
+        "persianTitle": "کدام یک کلمه کلیدی در جاوااسکریپت نیست؟",
+
+        "options": [{
+                "key": 1,
+                "title": "this"
+            },
+            {
+                "key": 2,
+                "title": "catch"
+            },
+            {
+                "key": 3,
+                "title": "function"
+            },
+            {
+                "key": 4,
+                "title": "array"
+            }
+        ],
+        "answerKey": 4
+
+    },
+    {
+        "id": 4,
+        "englishTitle": "What is the correct way to get the number of paragraphs on a page using jquery?",
+        "persianTitle": "کدام یک راه درست برای اینکه تعداد پاراگراف‌های موجود در صفحه را بدست بیاوریم با استفاده از jquery است؟",
+        "options": [{
+                "key": 1,
+                "title": "$('p').count()"
+            },
+            {
+                "key": 2,
+                "title": "$('p').length"
+            },
+            {
+                "key": 3,
+                "title": "$('*').find('p')"
+            },
+            {
+                "key": 4,
+                "title": "$('p').length()"
+            }
+        ],
+        "answerKey": 2
+
+    }
+]

@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+    .choices {
+        display: flex;
+        flex-direction: column;
+    }
+    .choice {
+        margin-left: 0;
+    }
+    .choices label {
+        display: block;
+    }
+}

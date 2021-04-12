@@ -1,0 +1,199 @@
+/* english font */
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+
+/* persian font */
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.ttf');
+}
+
+body {
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    /* max-width: 100%; */
+    text-align: center;
+    direction: ltr;
+    background: #ffd89b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #19547b, #ffd89b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.question {
+    margin-bottom: 50px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    margin-left: 40px;
+    direction: ltr;
+}
+
+.choice input:hover {
+    cursor: pointer;
+}
+
+#results {
+    width: 150px;
+    margin: 40px auto;
+}
+
+#results>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hr-style {
+    max-width: 50%;
+}
+
+
+/* style for button */
+
+button {
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    color: #00c7ec;
+    border: 3px solid #00c7ec;
+    border-radius: 5px;
+    padding: 10px 45px;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    color: white;
+    box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+    background-color: #00c7ec;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+button:hover:before {
+    -webkit-animation: shine 0.5s 0s linear;
+    -moz-animation: shine 0.5s 0s linear;
+    animation: shine 0.5s 0s linear;
+}
+
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+    outline: none;
+}
+
+button:before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: white;
+    box-shadow: 0 0 15px 3px white;
+}
+
+@-webkit-keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@-moz-keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+
+/* ***classes when switch language*** */
+
+.persian {
+    direction: rtl;
+}
+
+
+/* for persian font */
+
+.font-vazir {
+    font-family: Vazir;
+    font-size: 16px;
+}
+
+
+/* style for #change-lang */
+
+#change-lang {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background: #3a7bd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+}
+
+
+/* style for #title */
+
+#title {
+    margin: 40px 0;
+}
